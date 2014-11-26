@@ -9,6 +9,7 @@ import java.util.Map;
 import org.springframework.stereotype.Controller;
 
 import com.lucianosilva.blog.control.ExecuteTaskControl;
+import com.lucianosilva.blog.exception.BlogException;
 
 /**
  * 
@@ -23,7 +24,7 @@ public class ExecuteTaskControlImpl implements ExecuteTaskControl {
 	 * @see com.lucianosilva.blog.control.ExecuteTaskControl#execute()
 	 */
 	@Override
-	public void execute() throws Exception {
+	public void execute() throws BlogException {
 		// 
 		Map<String, String> env = System.getenv();
         for (String envName : env.keySet()) {

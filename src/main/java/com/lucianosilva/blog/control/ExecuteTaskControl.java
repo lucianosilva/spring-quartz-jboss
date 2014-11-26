@@ -4,6 +4,8 @@
  */
 package com.lucianosilva.blog.control;
 
+import com.lucianosilva.blog.exception.BlogException;
+
 /**
  * 
  *
@@ -12,6 +14,6 @@ package com.lucianosilva.blog.control;
  */
 public interface ExecuteTaskControl {
 
-	public void execute() throws Exception;
+	public void execute() throws BlogException;
 
 }
